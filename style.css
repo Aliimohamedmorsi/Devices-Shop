@@ -1,0 +1,620 @@
+@media(max-width: 548px) {
+    html {
+        font-size: 9px;
+    }
+
+    .camera>img {
+        display: inline-block;
+        width: 30%;
+        height: 4rem;
+    }
+
+    .security-system {
+        padding: 1rem 2.5rem;
+    }
+
+    .satisfaction-text {
+        display: none;
+    }
+
+    .subscribe {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 0.5rem;
+    }
+
+    .satisfaction-content img {
+        width: 30%;
+    }
+
+    .satisfaction-info {
+        display: none;
+    }
+}
+
+@media (min-width:548px) and (max-width: 720px) {
+    html {
+        font-size: 9px;
+    }
+
+    body {
+        padding: 1rem 2.5rem;
+    }
+
+    .grid {
+        grid-template-columns: 2fr 1fr;
+        column-gap: 3rem;
+    }
+
+    .cameras {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+
+    .align-container {
+        grid-column: span 2;
+        width: 100%;
+        display: grid;
+        grid-template-columns: minmax(80px, 1fr) 200px minmax(80px, 1fr);
+    }
+
+    .camera>img {
+        display: inline-block;
+        width: 20%;
+        height: 4rem;
+    }
+
+    .color img {
+        width: 35%;
+    }
+
+    .camera-content {
+        gap: 0.5rem;
+    }
+
+    .security-system {
+        grid-template-columns: 1fr;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+    }
+
+    .satisfaction-text {
+        display: none;
+    }
+
+    .subscribe {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 0.5rem;
+    }
+
+    .satisfaction-content img {
+        width: 30%;
+    }
+
+    .satisfaction-info {
+        display: none;
+    }
+}
+
+@media (min-width:720px) and (max-width: 1000px) {
+    html {
+        font-size: 9px;
+    }
+
+    body {
+        padding: 2rem 5rem;
+    }
+
+    .grid {
+        grid-template-columns: 2fr 1fr;
+        column-gap: 3rem;
+    }
+
+    .cameras {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+
+    .align-container {
+        grid-column: span 2;
+        width: 100%;
+        display: grid;
+        grid-template-columns: minmax(80px, 1fr) 200px minmax(80px, 1fr);
+    }
+
+    .camera>img {
+        display: inline-block;
+        width: 20%;
+        height: 4rem;
+    }
+
+    .camera-content {
+        gap: 0.5rem;
+    }
+
+    .security-system {
+        grid-template-columns: 1fr;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+    }
+
+    .satisfaction-text {
+        display: none;
+    }
+
+    .subscribe {
+        display: none;
+    }
+
+    .satisfaction-info {
+        display: flex;
+    }
+}
+
+@media (min-width:1000px) and (max-width: 1300px) {
+    html {
+        font-size: 13px;
+    }
+
+    body {
+        padding: 2rem 5rem;
+    }
+
+    .cameras {
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+    }
+
+    .align {
+        display: none;
+    }
+
+    .camera>img {
+        display: inline-block;
+        width: 50%;
+        height: 4rem;
+    }
+
+    .camera {
+        flex-direction: row;
+    }
+
+    .camera-content {
+        gap: 0.5rem;
+    }
+
+    .security-system {
+        margin-top: 5rem;
+        grid-template-columns: minmax(400px, 1.2fr) minmax(300px, 1fr);
+        padding: 2rem 4rem;
+        border-radius: 20px;
+    }
+
+    .satisfaction-text {
+        display: flex;
+    }
+
+    .subscribe {
+        display: none;
+    }
+
+    .satisfaction-info {
+        display: flex;
+    }
+}
+
+@media (min-width:1300px) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        padding: 2rem 5rem;
+    }
+
+    .cameras {
+        grid-template-columns: repeat(5, minmax(150px, 1fr));
+    }
+
+    .align {
+        display: none;
+    }
+
+    .camera>img {
+        display: block;
+        height: 8rem;
+    }
+
+    .camera {
+        flex-direction: column;
+    }
+
+    .camera-content {
+        gap: 0.5rem;
+    }
+
+    .security-system {
+        margin-top: 5rem;
+        grid-template-columns: minmax(400px, 1.2fr) minmax(300px, 1fr);
+        padding: 2rem 4rem;
+        border-radius: 20px;
+    }
+
+    .satisfaction-text {
+        display: flex;
+    }
+
+    .subscribe {
+        display: none;
+    }
+
+    .satisfaction-info {
+        display: flex;
+    }
+}
+
+
+:root {
+    --primary-color: white;
+    --secondary-color: rgb(237, 244, 255);
+    --third-color: rgb(96, 68, 214);
+    --text-color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.grid {
+    display: grid;
+}
+
+.choose-camera {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+}
+
+.choose-camera>p {
+    font-size: 0.8rem;
+    font-weight: 450;
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.choose-title {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cameras {
+    width: 100%;
+    margin-top: 1.2rem;
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choose-title>i {
+    font-size: 2rem;
+    opacity: 0.5;
+}
+
+.choose-title>h2 {
+    font-size: 2rem;
+}
+
+.choose-title>h5 {
+    font-size: 0.8rem;
+    margin-left: auto;
+    color: var(--third-color);
+}
+
+.camera {
+    background-color: var(--primary-color);
+    padding: 1.5rem 0.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.colors {
+    width: 100%;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30px, 1fr));
+    column-gap: 0.2rem;
+}
+
+.colors .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.085);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 0.2rem;
+}
+
+.camera-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.quantity-price {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin-top: 0.8rem;
+}
+
+.price {
+    margin-left: auto;
+}
+
+.camera>img {
+    object-fit: contain;
+}
+
+.camera-content h4 {
+    font-weight: 450;
+    color: rgba(0, 0, 0, 0.588);
+}
+
+.camera-content h4 span {
+    color: blue;
+    text-decoration: underline;
+}
+
+.minus,
+.plus,
+.minus-opacity {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    padding: 0.1rem;
+}
+
+.minus-opacity {
+    opacity: 0.5;
+    background-color: transparent;
+    border: 3px solid rgba(0, 0, 0, 0.422);
+}
+
+.price h3 {
+    font-weight: 400;
+}
+
+.price h3 del {
+    color: rgb(224, 99, 88);
+    font-weight: 400;
+}
+
+.choose-btn {
+    margin-top: 1.2rem;
+    color: var(--third-color);
+    border: 2px solid var(--third-color);
+    background-color: transparent;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+
+.options {
+    margin-top: 5rem;
+}
+
+.option-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0.8rem;
+}
+
+.option-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.options p {
+    font-size: 0.8rem;
+    font-weight: 450;
+    padding: 0.5rem 1rem 0.3rem 1rem;
+    opacity: 0.7;
+}
+
+.option-text i {
+    font-size: 2rem;
+    opacity: 0.5;
+}
+
+.down {
+    margin-left: auto;
+}
+
+
+
+
+.security-system {
+    background-color: var(--secondary-color);
+    display: grid;
+    column-gap: 2rem;
+}
+
+.items h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.7;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.security-cameras,
+.security-sensors,
+.accessories,
+.plans {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0 0.5rem;
+}
+
+.security-camera,
+.security-sensor,
+.accessory,
+.plan {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.security-cameras>h4,
+.security-sensors>h4,
+.accessories h4,
+.plans>h4 {
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+.price-quantity {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.price-quantity .price h3,
+.plan-content h4 {
+    font-weight: 500;
+    color: var(--third-color)
+}
+
+.price-quantity .price h3 del,
+.plan-content h4 del {
+    color: black;
+    opacity: 0.5;
+}
+
+.plan-content {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.satisfaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.satisfaction-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.satisfaction-text {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.satisfaction-text h3 {
+    font-size: 1.5rem;
+}
+
+.satisfaction-text h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.satisfaction-info {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.satisfaction-info h6,
+#subscribe {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    background-color: var(--third-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+}
+
+.info-text {
+    display: flex;
+    align-items: end;
+    gap: 0.5rem;
+}
+
+.info-text h5,
+#info-text h5 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+.info-text h4,
+#info-text h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--third-color);
+}
+
+.congrats {
+    color: rgb(38, 172, 150);
+    font-size: 1rem;
+}
+
+.checkout {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--third-color);
+    color: var(--primary-color);
+}
+
+.save {
+    text-decoration: underline;
+    opacity: 0.5;
+    font-size: 0.8rem;
+    font-style: italic;
+}
